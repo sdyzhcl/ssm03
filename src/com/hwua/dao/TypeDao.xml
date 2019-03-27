@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hwua.dao.TypeDao">
+    <!--查询所有的商品种类-->
+    <select id="selectAllType" resultType="type">
+        select * from type ;
+    </select>
+    <!--查询所有商品的大种类-->
+    <select id="selectAllBigType" resultType="type">
+        select * from type  where type_small=0
+    </select>
+    <!--根据商品的大种类查询对应的小种类-->
+    <select id="selectAllSmallTypeByBigType" resultType="type" parameterType="int">
+        select * for type  where type_big=#{type_big}
+    </select>
+
+
+
+
+</mapper>
