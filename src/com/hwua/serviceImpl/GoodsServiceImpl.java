@@ -20,7 +20,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public List<Goods> selectAllGoodsForPage(int pageNumber, int pageSize) {
-        Page pate=PageHelper.startPage(pageNumber,pageSize);
+        Page page=PageHelper.startPage(pageNumber,pageSize);
         List<Goods> list=goodsDao.selectAllGoods();
         return list;
     }

@@ -1,0 +1,7 @@
+ssm整合：
+
+1、创建一个web工程
+2、导入相关jar包，并配置到项目工程中
+    1、mybatis核心jar  1
+    2、myabtis相关jar  12
+    3、单元测试jar      1
