@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 聊天室</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
 <script type="text/javascript">
 function setReceiver(obj)
 {
@@ -33,7 +33,8 @@ function setReceiver(obj)
 		<div class="spacer"></div>
 		<div id="reply-to">接收人：所有</div>
 		<div class="reply">
-			<input type="text" class="text" name="content" /><label class="ui-blue"><input type="button" value="发送" /></label>
+			<input type="text" class="text" name="content" />
+			<label class="ui-blue"><input type="button" value="发送" /></label>
 		</div>
 	</div>
 </div>

@@ -49,7 +49,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-green"><input type="button"id="submit" name="submit" value="立即登陆" /></label></td>
+						<td><label class="ui-green">
+							<input type="button"id="submit" name="submit" value="立即登陆" />
+						</label>
+						</td>
 					</tr>
 				</table>
 			</form>

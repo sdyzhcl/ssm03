@@ -5,7 +5,8 @@
 	double num = Math.random();
  %>
 <div id="header" class="wrap">
-	<div id="logo"><img src="<%=path%>/static/images/logo.gif" /></div>
+	<div id="logo">
+		<img src="<%=path%>/static/images/logo.gif"/></div>
 	
 	<div class="help">
 		<a href="#" class="shopping">购物车</a>

@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"
 				<li class="current"><em></em>填写注册信息</li>
 				<li class="last"><em></em>注册成功</li>
 			</ul>
-			<form id="regForm" method="post" action="<%=path%>/user/register">
+			<form id="regForm" method="post" action="<%=path%>/jsp/register.jsp">
 				<table>
 					<tr>
 						<td class="field">用户名：</td>

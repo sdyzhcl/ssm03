@@ -1,5 +1,7 @@
 package com.hwua.serviceImpl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.hwua.dao.GoodsDao;
 import com.hwua.entity.Goods;
 import com.hwua.service.GoodsService;
@@ -20,7 +22,7 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public List<Goods> selectAllGoodsForPage(int pageNumber, int pageSize) {
-        Page page=PageHelper.startPage(pageNumber,pageSize);
+        Page page= PageHelper.startPage(pageNumber,pageSize);
         List<Goods> list=goodsDao.selectAllGoods();
         return list;
     }

@@ -10,8 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+<script type="text/javascript" src="<%=path%>/static/js/before/function.js"></script>
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>
@@ -26,10 +26,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<h2>最近浏览</h2>
 			<dl class="clearfix">
 				
-					<dt><img style="width: 54px; height: 54px;" src="images/product/0.jpg" /></dt>
+					<dt><img style="width: 54px; height: 54px;" src="<%=path%>/static/images/product/0.jpg" /></dt>
 					<dd><a href="#">商品名称</a></dd>
 					
-					<dt><img style="width: 54px; height: 54px;" src="images/product/0.jpg" /></dt>
+					<dt><img style="width: 54px; height: 54px;" src="<%=path%>/static/images/product/0.jpg" /></dt>
 					<dd><a href="#">商品名称</a></dd>
 			</dl>
 		</div>
@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">商品名称</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>
@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">商品名称</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>

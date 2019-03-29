@@ -11,7 +11,7 @@
 <body>
 <%@ include file="index_top.jsp"  %>
 <div id="position" class="wrap">
-	您现在的位置：<a href="index.html">易买网</a> &gt; 在线留言
+	您现在的位置：<a href="index.jsp">易买网</a> &gt; 在线留言
 </div>
 <div id="main" class="wrap">
 	<div class="lefter">

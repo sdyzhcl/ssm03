@@ -30,7 +30,7 @@ $(document).ready(function () {
             success:function (data) {
                 alert(data);
                 if(data=="注销成功"){
-                    self.location.href="/ssm01/jsp/login.jsp"
+                    self.location.replace("/ssm01/jsp/login.jsp");
                 }
             },
             error:function () {

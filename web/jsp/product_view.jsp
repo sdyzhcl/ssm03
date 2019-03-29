@@ -1,16 +1,20 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+<script type="text/javascript" src="<%=path%>/static/js/before/function.js"></script>
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>
 <div id="position" class="wrap">
-	您现在的位置：<a href="ProductServlet">易买网</a> &gt; <a href="product-list.html">图书音像</a> &gt; 图书
+	您现在的位置：<a href="ProductServlet">易买网</a> &gt; <a href="product-list.jsp">图书音像</a> &gt; 图书
 </div>
 <div id="main" class="wrap">
 	<div class="lefter">
@@ -19,7 +23,7 @@
 	<div id="product" class="main">
 		<h1>商品名称</h1>
 		<div class="infos">
-			<div class="thumb"><img style="width: 100px; height: 100px;" src="images/product/0.jpg" /></div>
+			<div class="thumb"><img style="width: 100px; height: 100px;" src="<%=path%>/static/images/product/0.jpg" /></div>
 			<div class="buy">
 				<p>商城价：<span class="price">￥12.34</span></p>
 				<p>库　存：有货</p>

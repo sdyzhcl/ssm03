@@ -1,13 +1,17 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%
+	String path=request.getContextPath();
+	String basePath=request.getScheme()+"://"+request.getServerName()+
+			":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+<script type="text/javascript" src="<%=path%>/static/js/before/function.js"></script>
 
 </head>
 <body>
@@ -28,7 +32,7 @@
 				</tr>
 				
 				<tr id="product_id_1">
-					<td class="thumb"><img style="width: 100px; height: 100px;" src="images/product/0.jpg" /><a href="#">商品名称</a></td>
+					<td class="thumb"><img style="width: 100px; height: 100px;" src="<%=path%>/static/images/product/0.jpg" /><a href="#">商品名称</a></td>
 					<td class="price" id="price_id_1">
 						￥<span id="span_1">12.34</span>
 						<input type="hidden" id="subPrice" value="" />
@@ -36,7 +40,7 @@
 					<td class="number">
 						<dl>
 							<dt><input id="number_id_1" type="text" name="number" value="12" /></dt>
-							<dd onclick="#">修改</dd>
+							<dd onclick="">修改</dd>
 						</dl>
 					</td>
 					<td class="delete"><a href="#">删除</a></td>

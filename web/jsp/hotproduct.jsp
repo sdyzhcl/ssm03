@@ -30,7 +30,10 @@ function a()
       {
        odiv2.style.left='0px';
        }
-       },30);};
+       },
+	   30);
+}
+
    odiv2.onmouseout=a;
    a();
    }
@@ -45,7 +48,7 @@ function a()
 
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
+						<dt><a href="#" target="_self"><img src="<%=page%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">XXXX</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>
@@ -53,7 +56,7 @@ function a()
 				
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
+						<dt><a href="#" target="_self"><img src="<%=page%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">XXXX</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>
